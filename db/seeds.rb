@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+#Category.create(name: 'comestible')
+#Category.create(name: 'computacion')
+
+#comestible.Product.crete(name: 'Computadora', description: 'Laptop Dell Negra', price: 15000)
+#Product.crete(name: 'Monitor', description: 'Monitor Samsung', price: 3000)
+#Product.crete(name: 'Smarhphone', description: 'Smarhphone Samsung', price: 5000)
+#Product.crete(name: 'Arroz', description: 'Arroz blanco', price: 50)
+#Product.crete(name: 'Azucar', description: 'Azucar morena', price: 70)

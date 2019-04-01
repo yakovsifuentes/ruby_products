@@ -1,0 +1,12 @@
+<h3>Update Category Details</h3>
+<%= form_with model: @category do |form| %>
+  <%= form.text_field :name, placeholder: "nombre" %>
+  <% if @category.enable %>
+    <%= form.check_box :enable, {checked: true} %>
+  <% else %>
+    <%= form.check_box:enable  %>
+  <% end %>
+  <%= label_tag(:enable, "Habilitar") %>
+
+  <%= form.submit %>
+<% end %>

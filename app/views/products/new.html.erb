@@ -1,5 +1,12 @@
-<h3>Create Products</h3>
-<%= form_with model: @produc do |form| %>
-<%= form.text_field :name, placeholder: "nombre" %>
-<%= form.text_field :price, placeholder: "precio" %>
-<%= 
+<h3>Create Product</h3>
+
+<%= form_with model: @product do |form| %>
+  <%= form.text_field :name, placeholder: "nombre" %>
+  <%= form.text_area :description, placeholder: "descripcion" %>
+  <%= form.text_field :price, placeholder: "precio" %>
+  <%= form.file_field :image %>
+
+  <%= select_tag "category_id", options_from_collection_for_select(@categories, "id", "name") %>
+
+<%= form.submit %>
+<% end %>
